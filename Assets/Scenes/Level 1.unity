@@ -661,7 +661,7 @@ MonoBehaviour:
   button: {fileID: 107352116}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!114 &107352116
 MonoBehaviour:
@@ -1077,8 +1077,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contentFolder: {fileID: 295386651}
   scrollRect: {fileID: 743959586}
-  typingSpeed: 0.8
-  reactionSpeed: 2
+  typingSpeed: 0.1
+  reactionSpeed: 1
   ownerMessagePrefab: {fileID: 4668137787399725150, guid: 5e1189b3dfedeb943aa84d11aeadc41a, type: 3}
   otherMessagePrefab: {fileID: 1081923418838394637, guid: 34ccc7c265ac12d42833fd1bf3931ac5, type: 3}
   otherUITyping: {fileID: 1579846258}
@@ -7151,7 +7151,7 @@ MonoBehaviour:
   button: {fileID: 261137797}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!114 &261137797
 MonoBehaviour:
@@ -19388,7 +19388,7 @@ MonoBehaviour:
   button: {fileID: 1180164408}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!114 &1180164408
 MonoBehaviour:
@@ -19733,7 +19733,7 @@ MonoBehaviour:
   button: {fileID: 1224805885}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!114 &1224805885
 MonoBehaviour:
@@ -20751,7 +20751,7 @@ MonoBehaviour:
   button: {fileID: 1521374337}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!82 &1521374341
 AudioSource:

@@ -658,7 +658,7 @@ MonoBehaviour:
   button: {fileID: 107352116}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!114 &107352116
 MonoBehaviour:
@@ -966,8 +966,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contentFolder: {fileID: 295386651}
   scrollRect: {fileID: 743959586}
-  typingSpeed: 0.08
-  reactionSpeed: 2
+  typingSpeed: 0.1
+  reactionSpeed: 1
   ownerMessagePrefab: {fileID: 4668137787399725150, guid: 5e1189b3dfedeb943aa84d11aeadc41a, type: 3}
   otherMessagePrefab: {fileID: 3560243961436225458, guid: 6d27ece77dac06e4983c7048eaaf5e27, type: 3}
   otherUITyping: {fileID: 1579846258}
@@ -19270,7 +19270,7 @@ MonoBehaviour:
   button: {fileID: 1224805885}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!114 &1224805885
 MonoBehaviour:
@@ -20087,7 +20087,7 @@ MonoBehaviour:
   button: {fileID: 1521374337}
   losePanel: {fileID: 731846582}
   winPanel: {fileID: 590803010}
-  replyReactionTime: 1.5
+  replyReactionTime: 0.5
   storyManager: {fileID: 160309970}
 --- !u!1 &1574162617
 GameObject:
