@@ -14,6 +14,9 @@ public class ReplyButton : MonoBehaviour
     [SerializeField] private GameObject winPanel;
     [SerializeField] private float replyReactionTime;
     [SerializeField] private StoryManager storyManager;
+    [SerializeField] private NewStoryManager newStoryManager;
+
+    public bool isNewVersion = false;
 
     public void SetReplyAction(string action)
     {
@@ -53,10 +56,20 @@ public class ReplyButton : MonoBehaviour
                 winPanel.SetActive(true);
                 break;
             case ReplyAction.NextMessage:
-                yield return StartCoroutine(storyManager.SpawnMessage(Sender.Owner, uiText.text));
+                if (isNewVersion) yield return StartCoroutine(newStoryManager.SpawnMessage(Sender.Owner, uiText.text));
+                else yield return StartCoroutine(storyManager.SpawnMessage(Sender.Owner, uiText.text));
                 yield return new WaitForSeconds(replyReactionTime);
-                storyManager.currentMessageId = nextMessageId;
-                storyManager.ContinueDialog();
+                if (isNewVersion)
+                {
+                    newStoryManager.currentMessageId = nextMessageId;
+                    newStoryManager.ContinueDialog();
+                }
+                else
+                {
+                    storyManager.currentMessageId = nextMessageId;
+                    storyManager.ContinueDialog();
+                }
+                
                 break;
         }
     }
